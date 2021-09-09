@@ -1,0 +1,7 @@
+/workspace/.metadata/**
+/workspace/.sonarlint/**
+**/bin/**
+**/target/**
+**/.settings/
+
+
