@@ -1,2 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.barclays.Company"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="com.barclays.EagerSingleton"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.dao.impl.MongoProductDAO"/>
+    <fullyQualifiedTypeName name="com.dao.impl.HibernateProductDAO"/>
+    <fullyQualifiedTypeName name="com.dao.impl.JDBCProductDAO"/>
+    <fullyQualifiedTypeName name="com.dao.factory.DaoFactory"/>
+    <fullyQualifiedTypeName name="java.util.ResourceBundle"/>
+    <fullyQualifiedTypeName name="com.barclays.contracts.IEmployeeDAO"/>
+    <fullyQualifiedTypeName name="com.barclays.contracts.ICustomerDAO"/>
+    <fullyQualifiedTypeName name="com.dao.contracts.IProductDAO"/>
+    <fullyQualifiedTypeName name="com.barclays.employee.dao.EmployeeDaoJDBCImpl"/>
+    <fullyQualifiedTypeName name="com.barclays.customer.dao.CustomerDaoJDBCImpl"/>
+    <fullyQualifiedTypeName name="com.barclays.employee.dao.EmployeeDaoJPAImpl"/>
+    <fullyQualifiedTypeName name="com.barclays.customer.dao.CustomerDaoJPAImpl"/>
+    <fullyQualifiedTypeName name="com.barclays.factory.DaoFactory.Holder"/>
+    <fullyQualifiedTypeName name="com.barclays.factory.DaoFactory"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.jvm.Items"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.barclays.paymentmodes.CreditCard"/>
+    <fullyQualifiedTypeName name="com.barclays.paymentmodes.UPI"/>
+    <fullyQualifiedTypeName name="com.barclays.contracts.PaymentStratergy"/>
+    <fullyQualifiedTypeName name="com.barclays.shopping.payments.BestPayment"/>
+    <fullyQualifiedTypeName name="com.barclays.contracts.IShoppingCart"/>
+    <fullyQualifiedTypeName name="com.barclays.shoppingcart.ShoppingCart"/>
+    <fullyQualifiedTypeName name="com.barclays.entiry.Item"/>
+</qualifiedTypeNameHistroy>
