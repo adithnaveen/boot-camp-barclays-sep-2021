@@ -1,0 +1,7 @@
+package com.barclays.paymentmodes;
+
+import com.barclays.contracts.PaymentStratergy;
+
+public class UPI implements PaymentStratergy{
+
+}

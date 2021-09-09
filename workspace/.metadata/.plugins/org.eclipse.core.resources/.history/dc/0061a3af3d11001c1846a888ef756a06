@@ -1,0 +1,27 @@
+package com.barclays.factory;
+
+import com.barclays.contracts.ICustomerDAO;
+import com.barclays.contracts.IEmployeeDAO;
+import com.barclays.employee.dao.EmployeeDaoJDBCImpl;
+import com.dao.contracts.IProductDAO;
+
+public class JDBCDaoFactory extends DaoFactory{
+
+	@Override
+	public IEmployeeDAO getEmployeeDao() {
+		reutrn new EmployeeDaoJDBCImpl();
+	}
+
+	@Override
+	public ICustomerDAO getCustomerDao() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IProductDAO getProductDao() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

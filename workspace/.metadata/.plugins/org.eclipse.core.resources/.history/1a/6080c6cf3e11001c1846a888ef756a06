@@ -1,0 +1,9 @@
+package com.barclays.impl;
+
+import com.barclays.factory.DaoFactory;
+
+public class AbstractFactoryImpl {
+	public static void main(String[] args) {
+		DaoFactory daoFactory = DaoFactory.getInstance();
+	}
+}

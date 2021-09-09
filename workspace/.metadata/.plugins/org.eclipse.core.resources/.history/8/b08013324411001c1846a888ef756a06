@@ -1,0 +1,5 @@
+package com.barclays.shopping.payments;
+
+public class BestPayment {
+
+}

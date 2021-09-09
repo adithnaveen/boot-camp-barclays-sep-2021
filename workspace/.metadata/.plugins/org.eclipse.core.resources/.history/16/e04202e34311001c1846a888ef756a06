@@ -1,0 +1,53 @@
+package com.barclays.shoppingcart;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.barclays.contracts.IShoppingCart;
+import com.barclays.contracts.PaymentStratergy;
+import com.barclays.entiry.Item;
+import com.barclays.paymentmodes.CreditCard;
+import com.barclays.paymentmodes.UPI;
+
+public class ShoppingCart implements IShoppingCart{
+
+	private List<Item> items; 
+	
+	public ShoppingCart() {
+		this.items = new ArrayList<Item>(); 
+	}
+	
+	
+	@Override
+	public void addItem(Item item) {
+		this.items.add(item);
+	}
+
+	@Override
+	public void removeItem(Item item) {
+		this.items.remove(item); 
+	}
+
+	@Override
+	public int calculateTotal(PaymentStratergy paymentStratergy) {
+		int sum = 0;
+		for(Item item : items) {
+			sum += item.getPrice() * item.getCount(); 
+		}
+		
+		if(paymentStratergy instanceof CreditCard) {
+			double charges = (CreditCard.getCharges()*sum) /100;
+			System.out.println("Credit Cart Payment Charges : "+ charges);
+			sum += charges; 
+		}else if(paymentStratergy instanceof UPI) {
+			double charges = UPI.get
+		}
+	}
+
+	@Override
+	public void checkOut() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

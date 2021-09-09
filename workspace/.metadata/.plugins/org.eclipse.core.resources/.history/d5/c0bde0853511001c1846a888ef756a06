@@ -1,0 +1,7 @@
+package com.dao.impl;
+
+import com.dao.contracts.IProductDAO;
+
+public class JDBCProductDAO implements IProductDAO{
+	
+}

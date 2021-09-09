@@ -1,0 +1,5 @@
+package com.barclays;
+
+public class EagerSingleton03 {
+
+}

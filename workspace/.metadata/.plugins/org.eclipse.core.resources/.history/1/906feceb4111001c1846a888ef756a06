@@ -1,0 +1,13 @@
+package com.barclays.paymentmodes;
+
+import com.barclays.contracts.PaymentStratergy;
+
+public class UPI implements PaymentStratergy{
+
+	@Override
+	public void pay(int amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

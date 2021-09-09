@@ -1,0 +1,40 @@
+package com.barclays.shoppingcart;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.barclays.contracts.IShoppingCart;
+import com.barclays.contracts.PaymentStratergy;
+import com.barclays.entiry.Item;
+
+public class ShoppingCart implements IShoppingCart{
+
+	private List<Item> items; 
+	
+	public ShoppingCart() {
+		this.items = new ArrayList<Item>(); 
+	}
+	
+	
+	@Override
+	public void addItem(Item item) {
+		this.items.add(item);
+	}
+
+	@Override
+	public void removeItem(Item item) {
+		this.items.remove(item); 
+	}
+
+	@Override
+	public int calculateTotal(PaymentStratergy paymentStratergy) {
+	 
+	}
+
+	@Override
+	public void checkOut() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

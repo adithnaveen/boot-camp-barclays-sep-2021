@@ -1,0 +1,8 @@
+package com.barclays;
+
+public class EagerSingletonImpl02 {
+	public static void main(String[] args) {
+		EagerSingleton instanceOne = EagerSingleton.getInstance();
+		
+	}
+}

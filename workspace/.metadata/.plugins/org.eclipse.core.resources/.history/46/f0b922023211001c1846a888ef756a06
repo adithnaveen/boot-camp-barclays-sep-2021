@@ -1,0 +1,7 @@
+package com.barclays;
+
+public class EagerSingleton03 {
+	public static void main(String[] args) {
+		
+	}
+}

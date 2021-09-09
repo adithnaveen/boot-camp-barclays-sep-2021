@@ -1,0 +1,7 @@
+package com.barclays.impl;
+
+public class AbstractFactoryImpl {
+	public static void main(String[] args) {
+		
+	}
+}

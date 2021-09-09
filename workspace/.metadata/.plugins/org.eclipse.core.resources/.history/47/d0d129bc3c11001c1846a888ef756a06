@@ -1,0 +1,7 @@
+package com.barclays.factory;
+
+// this class shall have the contracts for choosing which 
+// type of factory to be returned 
+public abstract class DaoFactory {
+
+}

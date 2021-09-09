@@ -1,6 +1,8 @@
 package com.barclays;
 
-public class EagerSingleton {
+import java.io.Serializable;
+
+public class EagerSingleton implements Serializable {
 	// eager singleton is the one which has the instance available 
 	// even before the object creation 
 	private static final EagerSingleton instance = new EagerSingleton(); 
@@ -15,4 +17,9 @@ public class EagerSingleton {
 		return instance;
 	}
 	
+	// when ever you get the instance from the external resource then
+	// a pre check is done with readResolve method 
+	protected Object readResolve() {
+		return getInstance();
+	}
 }
