@@ -1,0 +1,7 @@
+package com.barclays;
+
+public class Company {
+	private Company() {
+		// TODO Auto-generated constructor stub
+	}
+}

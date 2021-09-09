@@ -1,0 +1,13 @@
+package com.barclays;
+
+public class EagerSingleton {
+	EagerSingleton eagerSingleton = new EagerSingleton(); 
+
+	// if you dont have a constructor 
+	// the compiler gives you a constructor
+	
+	public EagerSingleton() {
+		System.out.println("EagerSingleton() Creation");
+	}
+
+}

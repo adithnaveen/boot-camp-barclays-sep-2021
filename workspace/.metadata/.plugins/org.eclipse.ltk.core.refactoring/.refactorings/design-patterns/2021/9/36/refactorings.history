@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename source folder &apos;design-patterns/com.naveen.singleton01&apos; to &apos;01singleton&apos;&#x0A;- Original project: &apos;design-patterns&apos;&#x0A;- Original element: &apos;design-patterns/com.naveen.singleton01&apos;&#x0A;- Renamed element: &apos;com.naveen.singleton01&apos;" description="Rename source folder &apos;com.naveen.singleton01&apos;" id="org.eclipse.jdt.ui.rename.source.folder" input="/com.naveen.singleton01" name="01singleton" stamp="1631164301319" version="1.0"/>
+</session>
