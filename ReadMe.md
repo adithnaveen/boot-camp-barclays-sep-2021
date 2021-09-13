@@ -484,11 +484,11 @@ generate the site with different skin
 
 
 
-mvn archetype:generate -DgroupId=com.naveen -DartifactId=parent-project
-cd parent-project
- mvn archetype:generate -DgroupId=com.naveen -DartifactId=services
- mvn archetype:generate -DgroupId=com.naveen -DartifactId=core 
- mvn archetype:generate -DgroupId=com.naveen -DartifactId=web-app
+- mvn archetype:generate -DgroupId=com.naveen -DartifactId=parent-project
+- cd parent-project
+ - mvn archetype:generate -DgroupId=com.naveen -DartifactId=services
+ - mvn archetype:generate -DgroupId=com.naveen -DartifactId=core 
+ - mvn archetype:generate -DgroupId=com.naveen -DartifactId=web-app
 
 gradle
 
