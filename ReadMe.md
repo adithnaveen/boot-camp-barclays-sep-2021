@@ -368,3 +368,140 @@ main{
 	user.persist("Anshul"); 
 	user.remove(123); 
 }
+
+
+
+Day 2 
+
+Classroom Session - 
+a) Introduction to Maven, Gradle for Dependency Resolutions 
+b) Build process - Introduction to Maven, Gradle
+ 
+
+
+
+spring 
+hibernate 
+jpa 
+slf4j
+lobok 
+log4j2 
+junit 
+hamcrest 
+etc.... 
+
+
+1. is to build the .jar file 
+2. good tool for dependency management 
+3. reporting 
+4. maven will help to generate the project (artifacts)
+
+
+download maven 
+https://dlcdn.apache.org/maven/maven-3/3.8.2/binaries/apache-maven-3.8.2-bin.zip
+
+in windows you have set the path\bin in evn variable (user / system)
+ 
+
+
+
+create a java project <- maven 
+create a spring project <- maven
+create a hibernate project  <- maven
+
+group 
+   -> artifacts 
+   	 -> version 
+	 
+	 
+	 
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.17</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.30</version>
+</dependency>
+
+
+
+
+mvn archetype:generate 
+
+1822: remote -> org.apache.maven.archetypes:maven-archetype-quickstart (An archetype which contains a sample Maven project.)
+
+> mvn archetype:generate -DgroupId=com.mycompany -DartifactId=first-project -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+Maven has 3 stages 
+1. clean -> mvn clean 
+2. build 
+3. reporting 
+
+
+1045  tree
+ 1046  clear
+ 1047  pwd
+ 1048  ls
+ 1049  cd first-project
+ 1050  mvn clean 
+ 1051  ls
+ 1052  mvn validate
+ 1053  ls
+ 1054  mvn compile 
+ 1055  ls
+ 1056  tree
+ 1057  mvn clean test
+ 1058  tree
+ 1059  mvn clean install
+ 1060  tree
+
+
+ mvn clean install -DskipTests=true
+
+> mvn dependency:analyse
+> mvn dependency:tree
+> mvn dependency:resolve
+> mvn eclipse:eclipse 
+> mvn site 
+
+
+excersise 
+
+1. change the skin
+generate the site with different skin 
+2. install sonar lint to your eclipse 
+3. generate multi module project in eclipse 
+4. create a hello world application but not with system.out instead logger from slf4j / log4j2 
+
+
+
+mvn archetype:generate -DgroupId=com.naveen -DartifactId=parent-project
+cd parent-project
+ mvn archetype:generate -DgroupId=com.naveen -DartifactId=services
+ mvn archetype:generate -DgroupId=com.naveen -DartifactId=core 
+ mvn archetype:generate -DgroupId=com.naveen -DartifactId=web-app
+
+gradle
+
+https://gradle.org/install/
+
+
+
+
+
+
+
+
+
+
+
+

@@ -33,4 +33,6 @@
     <fullyQualifiedTypeName name="com.barclays.contracts.IShoppingCart"/>
     <fullyQualifiedTypeName name="com.barclays.shoppingcart.ShoppingCart"/>
     <fullyQualifiedTypeName name="com.barclays.entiry.Item"/>
+    <fullyQualifiedTypeName name="com.barclays.entity.Employee"/>
+    <fullyQualifiedTypeName name="com.barclays.builder.EmployeeBuilder"/>
 </qualifiedTypeNameHistroy>
