@@ -3,7 +3,6 @@ INDEX VERSION 1.131+/Volumes/Kanchan/MyTrainings/barclays/boot-camp-sep-2021/wor
 3916921473.index
 3060203568.index
 2541083028.index
-1346275315.index
 1820749328.index
 2505283569.index
 3275736551.index
