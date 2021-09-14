@@ -495,6 +495,8 @@ gradle
 https://gradle.org/install/
 
 
+Assignment Github link : 
+https://github.com/Talapala-Sneha/Sample-app
 
 
 
@@ -554,6 +556,7 @@ Then the application show home screen
 ### junit 3 
 ```
 class MyTestClass extends TestCase {
+	@Test
 	public void myTest() {}
 	public void hello() {}
 }
@@ -576,4 +579,31 @@ class MyTestClass extends TestCase {
 - junit 5 Dependencies 
   - https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine/5.7.1
   - https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3
-  - 
+  - https://mvnrepository.com/artifact/org.mockito/mockito-core/3.8.0
+  - https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter/3.8.0
+  
+
+
+
+
+
+
+// POST, PUT, GET, DELETE 
+```
+
+public interface IMessageService {
+	
+	public List<String> getMessages(String author);
+}
+
+
+public class MessageServiceImpl implements IMessageService {
+	public List<String> getMessages(String author) {
+
+		BL 
+		to connect to DB 
+
+	}
+}
+
+```

@@ -13,7 +13,7 @@ public class EmmployeeDAO {
 		}
 
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(0);
 		} catch (InterruptedException ie) {
 		}
 
