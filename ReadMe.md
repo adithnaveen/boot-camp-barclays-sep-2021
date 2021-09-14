@@ -498,10 +498,82 @@ https://gradle.org/install/
 
 
 
+# Day 3 
+
+
+<img src="./notes-and-images/tdd.drawio.png">
+
+a) Introduction to Automated Testing
+      1. Agile Values and Principles around Software Quality
+      2. Introduction to TDD & Benefits of TDD
+      3. Test First Vs. Test Last (Formulazing the intent)
 
 
 
 
+In the development we involve stake holder 
+
+## Water fall model 
+- Requirement Analysis 
+- Design 
+- Implementation 
+- Testing 
 
 
+### In agile 
+- MDD - Model Driven Development 
+- DDD - Domain Driven Development 
+- BDD - Behaviour Driven Development 
+- TDD - Test Driven Development 
 
+DSL - Domain Specific Language 
+
+
+- BDD
+  - Given 
+  - When
+  - Then 
+  - And 
+  - But 
+
+
+Given the application example.com is loaded 
+When the user enter valid user name 
+And valid password 
+And clicks on Submit button 
+Then the application show home screen 
+
+
+### Agile 
+1. Scrum Master 
+2. Sprint - Definite time 
+3. Kanban - Not Definite time 
+4. Burndown / BurnUp Chart 
+
+
+### junit 3 
+```
+class MyTestClass extends TestCase {
+	public void myTest() {}
+	public void hello() {}
+}
+```
+
+# junit 4 
+```
+	assertEquals("hello", "hello"); 
+```
+# junit 5 
+  - hamcrest which is asserting library 
+
+
+```
+	 assertThat(theBiscuit, equalTo(myBiscuit)); 
+	 assertThat("chocolate chips", theBiscuit.getChocolateChipCount(), equalTo(10)); 
+
+```
+
+- junit 5 Dependencies 
+  - https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine/5.7.1
+  - https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all/1.3
+  - 
