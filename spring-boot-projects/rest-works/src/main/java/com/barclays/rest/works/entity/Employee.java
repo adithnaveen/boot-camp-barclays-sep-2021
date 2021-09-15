@@ -1,12 +1,16 @@
 package com.barclays.rest.works.entity;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Employee {
+	@Id
 	private int empId;
 	private String empName; 
 	private double salary;
+	
+	
 	
 	
 	public Employee() {}

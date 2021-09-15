@@ -695,14 +695,93 @@ To Start Mongod
 
 
 
+2021-09-15 12:24:33.288  INFO 74412 --- [nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+
+<servlet>
+	<servlet-class>com.naveen.HelloWorld</serlet-class>
+	<servlet-name>hello</servlet-name>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>hello</servlet-name>
+	<url-pattern>/hello</url-pattern>
+</servlet-mapping>
+ 
+<servlet>
+	<servlet-class>com.naveen.LoginValidate</serlet-class>
+	<servlet-name>login</servlet-name>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>login</servlet-name>
+	<url-pattern>/login</url-pattern>
+</servlet-mapping>
 
 
 
 
 
+<servlet>
+	<servlet-class>com.naveen.DispatcherServlet</serlet-class>
+	<servlet-name>dispatcherServlet</servlet-name>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>dispatcherServlet</servlet-name>
+	<url-pattern>/*</url-pattern>
+</servlet-mapping>
+
+
+
+
+## application.properties 
+
+### set mongodb properties 
+spring.data.mongodb.database=barclays-db
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
 
 
 
 
 
+In clean coding which below declaration is better. 
 
+a. ArrayList<String> list = new ArrayList<String>();  -> ArrayList  list = new ArrayList (); 
+b. List<String> list = new ArrayList<String>();  -> List  list = new ArrayList (); 
+c. List<String> list = new ArrayList<>(); 
+d. List list = new ArrayList(); 
+
+
+
+interface List {
+	public void one();
+	public void two();
+}
+
+// naveen 
+class ArrayList implements List{
+
+	public void one() {}
+	public void two() {}
+	public void three() {}
+}
+
+class Vector implements List {
+public void one() {}
+
+}
+
+// sanya 
+1. List list = new Vector();
+
+2. List list = new ArrayList();
+list.one();
+
+// Abhinaya 
+List list = new ArrayList();
+list.one();
+
+
+Pendrive 

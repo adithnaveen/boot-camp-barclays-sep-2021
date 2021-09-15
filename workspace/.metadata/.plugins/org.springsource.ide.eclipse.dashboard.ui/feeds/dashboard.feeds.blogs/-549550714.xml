@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-09-14T10:00:00Z</updated>
+  <updated>2021-09-15T07:00:00Z</updated>
+  <entry>
+    <title>Spring Tips: A Bootiful Look at SpringOne 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/15/spring-tips-a-bootiful-look-at-springone-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-09-12:4543</id>
+    <updated>2021-09-15T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, I&amp;rsquo;m joined by teammates Tiffany Jernigan and Mario Gray as we recap some of our favorite talks from the just-finished SpringOne 2021 event! Did you miss the show? (why)? Fret not: we&amp;rsquo;ll look at some of our favorite moments from SpringOne 2021! &lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VMtUzytjo6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - September 14th, 2021</title>
     <link rel="alternate" href="https://spring.io/blog/2021/09/14/this-week-in-spring-september-14th-2021" />
@@ -1013,31 +1026,6 @@ class ServiceConfiguration {&#xD;
 &lt;/ul&gt;
 &lt;p&gt;Spring Tools 4.12.0 is scheduled to be released in late September 2021.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - August 17th, 2021</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/08/17/this-week-in-spring-august-17th-2021" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-08-17:4518</id>
-    <updated>2021-08-17T10:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! How&amp;rsquo;re you doing? I&amp;rsquo;m alright. I&amp;rsquo;ve been recuperating from a COVID-19 infection. Today was the first day in a while that I woke up and wasn&amp;rsquo;t short of breath. Most days, I&amp;rsquo;ve woken up, hacked a few wads of phlegm into the toilet, and then my breathing was fine. But today I woke up and wasn&amp;rsquo;t short of breath in the first place. (I still hacked a few wads of phlegm). Thank goodness for vaccines, or I expect my experience of this virus would&amp;rsquo;ve been much worse as a lifelong asthmatic. Things are looking up! &lt;/p&gt;
-&lt;p&gt;And then, as if my fortunes couldn&amp;rsquo;t get any better, I got to compiling this week&amp;rsquo;s roundup and there&amp;rsquo;s a &lt;em&gt;ton&lt;/em&gt; of great stuff in it so let&amp;rsquo;s dive right in!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Get started with &lt;a href="https://axoniq.io/blog-overview/introducing-the-axoniq-initializr?utm_campaign=Initializr%20Campaign&amp;utm_content=176483439&amp;utm_medium=social&amp;utm_source=twitter&amp;hss_channel=tw-803611480864227328"&gt;Spring Boot and the CQRS framework Axon&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;In last week&amp;rsquo;s installment of &lt;a href="https://spring.io/blog/2021/08/12/a-bootiful-podcast-neo4j-ceo-and-spring-data-cofounder-emil-eifrem-on-graphs-neo4j-and-more"&gt;A Bootiful Podcast: Neo4J CEO and Spring Data cofounder Emil Eifrem on graphs, Neo4J, and more&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://viacom.tech/blog/2021/08/02/alexa_request_validation_with_spring_cloud_gateway.html"&gt;Alexa Request Validation with Spring Cloud Gateway&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://foojay.io/"&gt;Free Java &amp;amp; OpenJDK Info for Daily Java Usage&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/08/17/spring-authorization-server-officially-moves-to-spring-projects"&gt;Spring Authorization Server officially moves to spring-projects&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/08/12/spring-data-2021-0-4-and-2020-0-12-released"&gt;Spring Data 2021.0.4 and 2020.0.12 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/08/12/spring-data-2021-1-0-m2-released"&gt;Spring Data 2021.1.0-M2 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.vinsguru.com/spring-webclient-with-feign/amp/?__twitter_impression=true"&gt;Spring WebClient with Feign&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/JavaAtMicrosoft/status/1427706803329114118"&gt;Get hands-on with Azure Spring Cloud in 90 minutes.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/VMware/status/1425887581833596931"&gt;Did you see Cora Iberkleid&amp;rsquo;s power session on Spring Cloud Gateway? It was awesome! &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

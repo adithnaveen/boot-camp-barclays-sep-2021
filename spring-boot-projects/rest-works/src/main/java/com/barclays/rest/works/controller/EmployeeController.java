@@ -1,25 +1,40 @@
 package com.barclays.rest.works.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.barclays.rest.works.contract.IEmployeeService;
 import com.barclays.rest.works.entity.Employee;
-import com.barclays.rest.works.service.EmployeeService;
 
 @RestController
 public class EmployeeController {
 
 	@Autowired
-	private EmployeeService service; 
-	 
+	private IEmployeeService service; 
+	
 	@GetMapping("/")
 	public String health() {
 		return "Working... to check health";
 	}
 	
-	@GetMapping("/dummy-emp")
-	public Employee getDummyEmployee() {
-		return service.dummyEmployee();
+//	@GetMapping("/dummy-emp")
+//	public Employee getDummyEmployee() {
+//		return service.dummyEmployee();
+//	}
+	
+	@GetMapping("/sayhi/{name}")
+	public String sayHi( @PathVariable("name") String name) {
+		return "Hi " + name;
 	}
+
+	@GetMapping("/employees")
+	public List<Employee> getAllEmployees() {
+		return service.getAllEmployees(); 
+	}
+
+
 }
