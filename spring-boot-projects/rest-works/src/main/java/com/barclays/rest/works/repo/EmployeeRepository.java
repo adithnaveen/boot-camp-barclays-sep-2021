@@ -7,5 +7,6 @@ import com.barclays.rest.works.entity.Employee;
 
 @Repository
 public interface EmployeeRepository extends MongoRepository<Employee, Integer> {
-	
+
+	// you can build custom queries here 
 }
