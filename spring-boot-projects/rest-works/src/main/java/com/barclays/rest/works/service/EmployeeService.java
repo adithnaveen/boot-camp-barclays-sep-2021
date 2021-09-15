@@ -17,8 +17,7 @@ public class EmployeeService implements IEmployeeService {
 	
 	@Override
 	public Employee insertEmployee(Employee employee) {
-	 
-		return null;
+		return repo.save(employee);
 	}
 
 	@Override
@@ -28,7 +27,7 @@ public class EmployeeService implements IEmployeeService {
 
 	@Override
 	public Employee getEmployeeById(int empId) {
-		return repo.findById(empId).get();
+		return repo.findById(empId).get(); 
 	}
 	
 }

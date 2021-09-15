@@ -5,7 +5,22 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-09-15T07:00:00Z</updated>
+  <updated>2021-09-15T08:44:10Z</updated>
+  <entry>
+    <title>Spring Framework 5.3.10 and 5.2.17 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/15/spring-framework-5-3-10-and-5-2-17-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2021-09-15:4545</id>
+    <updated>2021-09-15T08:44:10Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; and &lt;code&gt;5.2.17&lt;/code&gt; are available now.&lt;/p&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.10"&gt;45 fixes and improvements&lt;/a&gt;. Spring Framework &lt;code&gt;5.2.17&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.17.RELEASE"&gt;13 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Stay tuned for follow-up Spring Boot releases next week.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.10/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tips: A Bootiful Look at SpringOne 2021</title>
     <link rel="alternate" href="https://spring.io/blog/2021/09/15/spring-tips-a-bootiful-look-at-springone-2021" />
@@ -997,35 +1012,6 @@ class ServiceConfiguration {&#xD;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; |  &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tools 4.11.1 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/08/18/spring-tools-4-11-1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2021-08-18:4519</id>
-    <updated>2021-08-18T11:44:09Z</updated>
-    <content type="html">&lt;p&gt;ear Spring Community,&lt;/p&gt;
-&lt;p&gt;I am happy to announce the 4.11.1 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#fixes-in-this-release" class="anchor" name="fixes-in-this-release"&gt;&lt;/a&gt;Fixes in this release&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; fixed: [codespaces] spring boot extension starting up multiple times in Codespaces setting (&lt;a href="https://github.com/spring-projects/sts4/issues/669"&gt;#669&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; fixed: [codespaces] spring boot extension doesn&amp;rsquo;t find the right JDK when connecting to a codespace (&lt;a href="https://github.com/spring-projects/sts4/issues/670"&gt;#670&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; fixed: JAVA_Home should be right but still shows &amp;ldquo;Note Java 8 can still be used in your own projects&amp;rdquo; (&lt;a href="https://github.com/spring-projects/sts4/issues/664"&gt;#664&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: progress view shows many AsyncLiveExpression refresh messages and doesn&amp;rsquo;t respond anymore (&lt;a href="https://github.com/spring-projects/sts4/issues/653"&gt;#653&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: latest CI builds do not show port of running app anymore (&lt;a href="https://github.com/spring-projects/sts4/issues/659"&gt;#659&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; improvement: Property &amp;lsquo;commit_message&amp;rsquo; not recognized for semver resources (&lt;a href="https://github.com/spring-projects/sts4/issues/655"&gt;#655&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; improvement: GitResource schema, add missing properties (&lt;a href="https://github.com/spring-projects/sts4/issues/671"&gt;#671&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; improvement: Unknown property &amp;lsquo;fetch_tags&amp;rsquo; for type &amp;lsquo;GitSource&amp;rsquo;(YamlSchemaProblem) (&lt;a href="https://github.com/spring-projects/sts4/issues/668"&gt;#668&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Spring Tools 4.12.0 is scheduled to be released in late September 2021.&lt;/p&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

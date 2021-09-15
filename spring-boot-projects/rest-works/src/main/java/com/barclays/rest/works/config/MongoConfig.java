@@ -17,7 +17,11 @@ public class MongoConfig {
 	
 	@Bean
 	public CommandLineRunner commandLineRunner(EmployeeRepository repo) {
-//		return string -> repo.insert(new Employee(101, "Harshitha", 2233));
+//		return string -> { 
+//			repo.insert(new Employee(101, "Harshitha", 2233));
+//			repo.insert(new Employee(102, "Apoorv", 1123));
+//		}; 
+		
 		return null;
 	}
 }
