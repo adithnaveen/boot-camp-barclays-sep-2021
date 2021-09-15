@@ -785,3 +785,23 @@ list.one();
 
 
 Pendrive 
+
+
+
+@Autowired 
+private List list;
+
+
+- done 
+GET /employee 
+GET /employee/{empId}
+POST /employee
+
+
+- TODO 
+PUT /employee 
+{
+	new data model which you want to update 
+}
+
+DELETE /employee/id

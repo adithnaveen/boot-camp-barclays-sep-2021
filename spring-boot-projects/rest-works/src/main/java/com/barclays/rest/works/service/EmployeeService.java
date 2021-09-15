@@ -17,6 +17,7 @@ public class EmployeeService implements IEmployeeService {
 	
 	@Override
 	public Employee insertEmployee(Employee employee) {
+		
 		return repo.save(employee);
 	}
 
@@ -28,6 +29,30 @@ public class EmployeeService implements IEmployeeService {
 	@Override
 	public Employee getEmployeeById(int empId) {
 		return repo.findById(empId).get(); 
+	}
+
+	@Override
+	public Employee updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Employee> getEmployeesByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> getEmployeesBetweenSalary(double minSal, double maxSal) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
