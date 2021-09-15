@@ -607,3 +607,102 @@ public class MessageServiceImpl implements IMessageService {
 }
 
 ```
+
+
+
+# Day 4 
+
+Classroom - The Full stack: Cloud-based Applications - 1
+a) Microservices Architecture
+b) Introduction to REST API	4
+
+
+
+Classroom - The Full stack: Cloud-based Applications - 2
+b) Completion of REST API
+c) Serverless Architecture - AWS 	
+ 
+check for AWS Access 
+
+
+<?xml version="1.0"?>
+
+<employees>
+	<emp>
+		<empid>101</empid>
+		<empname>Harshini</empname>
+		<empsal>12345</empsal>
+		<address>
+			<hno>h123</hno>
+			<street>Some Blvd </street>
+		</address>
+	</emp>
+	<emp>
+		<empid>102</empid>
+		<empname>Purushotham</empname>
+		<empsal>22334</empsal>
+		<address>
+			<hno>h543</hno>
+			<street>California Blvd </street>
+		</address>
+	</emp>
+</employees>
+
+
+to json (light weight)
+
+employee:[
+	emp:{
+		empid:101, 
+		empname:"Harshini", 
+		empsal:1234, 
+		address:{
+			hno:h123, 
+			street:"Some Blvd"
+		}
+	}
+
+]
+
+
+
+
+- Rest 
+- Restfull
+
+
+
+Sprint Boot 
+	Java 8, 11 
+	Eclipse / VS Code / Intellij 
+MongoDB 
+
+GitBash
+
+
+To Start Mongod 
+
+> mongod --dbpath .
+> mongo 
+
+
+
+- com.barclays.rest.works (RestWorksApplication.java) - @SpringBootApplication
+  - com.barclays.rest.works.controller
+  - com.barclays.rest.works.service - EmployeeService - @Service
+  - com.barclays.rest.works.entity
+  - com.barclays.rest.works.xxxx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
