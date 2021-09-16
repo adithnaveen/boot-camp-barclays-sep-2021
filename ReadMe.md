@@ -805,3 +805,104 @@ PUT /employee
 }
 
 DELETE /employee/id
+
+
+
+# Day 5
+
+
+Given - pre condition 
+When - is actual job 
+Then - is after work 
+
+
+when(repo.save(emp)).thenReturn(emp); 
+
+
+assertEquals("Harish", service.insertEmployee(emp).getName()); 
+
+
+
+Git Works 
+For User 
+- git config --global user.name Naveen 
+- git config --global user.email adith.naveen@gmail.com 
+- git config --global --edit 
+
+For System wide  
+- git config --system user.name Naveen 
+- git config --system user.email adith.naveen@gmail.com 
+- git config --system --edit 
+
+
+- git init (the current folder will become git repo)
+- git init my-repo (new folder called my-repo will be created and then it becomes git repo)
+
+
+<esc> :wq
+
+-- to remove the file which is created before staging 
+
+- Step 1 : Modify Hello.java + save and Exit 
+- Step 2 : git status -- should see a messsage "Modified <File>" 
+- Step 3 : git restore Hello.java -this command will discard what ever work you have done before commit 
+
+--- 
+
+- Step 1 : Create a new file called Employee.java + add some content + Save & exit 
+- Step 2 : git status - it says untracked file
+- Step 3 : to remove rm Employee.java 
+
+
+
+working with Branching Stratergy 
+- 1. To create a branch 
+  -  git branch <branch-name>
+- 2. To Switch a branch 
+  - git checkout <branch-name>
+- 3. Edit the file which is in new branch (login-branch) 
+- 4. git branch --merged  - will show the branches merged to current branch (Main)
+- 5. git branch --no-merged - will show if the branch is not merged if any 
+- 6. git diff main..new-branch 
+- 7. git diff new-branch..main^ (^ to check 1 level above)
+- 8. git log --oneline --graph --all --decorate 
+- 9. git log --oneline --graph --all --decorate -5 (will give you last 5 commits)
+
+
+Seeding local repo to github 
+1. git remote add origin https://github.com/adithnaveen/git-training-braclays-delete.git
+2. git branch -M main 
+3. git push -u origin main 
+
+
+Create a tag for application 
+1. git tag --help  
+2. git tag -l (to list the tags)
+3. git tag -a v1.0 -m "first bench mark created"
+4. git push origin v1.0     
+
+
+
+Naveen's Team 
+
+adith.naveen@gmail.com 
+shubham15gupta09@gmail.com
+	> git branch shubham-branch 
+	> git checkout shubahm-branch 
+	> make some changes 
+	> git push origin shubham-branch 
+
+	
+harshir07@gmail.com
+	> git branch harshini-branch 
+	> git checkout harshini-branch 
+	> make some changes 
+	> git push origin harshini-branch 
+
+apooorvagupta30@outlook.com
+	> git branch apoorva-branch 
+	> git checkout apoorva-branch 
+	> make some changes 
+	> git push origin apoorva-branch 
+
+> git clone https://github.com/barclays-training-delete/team-work.git
