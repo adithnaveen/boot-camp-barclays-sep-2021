@@ -886,23 +886,134 @@ Create a tag for application
 Naveen's Team 
 
 adith.naveen@gmail.com 
-shubham15gupta09@gmail.com
-	> git branch shubham-branch 
+
+- shubham15gupta09@gmail.com
+```	> git branch shubham-branch 
 	> git checkout shubahm-branch 
 	> make some changes 
-	> git push origin shubham-branch 
+	> git push origin shubham-branch ```
 
 	
 harshir07@gmail.com
-	> git branch harshini-branch 
+```	> git branch harshini-branch 
 	> git checkout harshini-branch 
 	> make some changes 
 	> git push origin harshini-branch 
-
+```
 apooorvagupta30@outlook.com
-	> git branch apoorva-branch 
+	````> git branch apoorva-branch 
 	> git checkout apoorva-branch 
 	> make some changes 
 	> git push origin apoorva-branch 
+````
+
 
 > git clone https://github.com/barclays-training-delete/team-work.git
+
+###  Git Cheat Sheet 
+https://education.github.com/git-cheat-sheet-education.pdf
+
+### Github CLI 
+https://github.com/cli/cli
+
+
+
+
+# DAY 6 
+
+I T M - Model / Role 
+
+
+ 
+ 
+Classroom - Build Pipelines - 2	b) Completion of Build Process
+c) Automatic Build Process using Jenkins (introduction only, Setup of Jenkins not covered)
+d) Automated Code reviews - Sonar (Introduction only , Setup Configuration of Sonar not covered) 
+ 
+
+
+CI / CD - Continious Integration / Continious Development 
+
+- Jenkins 
+  - hundreds of plugins
+- Bamboo 
+
+
+- Maven 
+
+c:\program files\java\jdk11\
+
+
+GIT 
+GITHUB 
+MAVEN
+ANT
+PIPELINE 
+BLUEOCEAN
+JAVA SCRIPT 
+JUNIT 
+
+
+
+
+In Jenkins  there are types of project 
+
+1. Simple 
+2. Pipe line - Groovy 
+
+
+
+Jenkins - In the Bash/ win bash 
+cd /Volumes/Kanchan/MyTrainings/barclays/boot-camp-sep-2021/jenkins-java
+javac -d . *.java
+java com.company.Hello
+
+
+
+
+Jenkinsfile 
+
+
+pipeline {
+    agent { M3 }
+    stages {
+        stage('build') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+    }
+}
+
+
+
+from jenkins 
+pipeline {
+    agent any
+
+    tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven "M3"
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/adithnaveen/git-training-barclays-delete.git'
+
+                // Run Maven on a Unix agent.
+                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+
+                // To run Maven on a Windows agent, use
+                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+
+        }
+        stage('JAR') {
+            steps {
+                sh "mvn install"
+            }
+        }
+    }
+}
