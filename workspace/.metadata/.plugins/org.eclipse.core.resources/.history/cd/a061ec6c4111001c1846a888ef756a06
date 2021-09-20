@@ -1,7 +1,0 @@
-package com.barclays.entiry;
-
-public class Item {
-	private String itemName;
-	private double price; 
-	private int count; 
-}

@@ -1,7 +1,0 @@
-package com.naveen;
-
-public class ClassLoader {
-	static {
-		System.out.println("hey i'm from static block ClassLoader");
-	}
-}

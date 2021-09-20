@@ -1,5 +1,0 @@
-package com.dao.contracts;
-
-public interface IProductDAO {
-
-}

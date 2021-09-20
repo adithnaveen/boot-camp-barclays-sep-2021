@@ -1,5 +1,0 @@
-package com.barclays.contracts;
-
-public interface PaymentStratergy {
-
-}

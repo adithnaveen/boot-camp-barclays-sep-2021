@@ -45,7 +45,7 @@
 	</section>
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="415"/>
-		<item key="DIALOG_Y_ORIGIN" value="-27"/>
+		<item key="DIALOG_Y_ORIGIN" value="-5"/>
 		<item key="DIALOG_WIDTH" value="553"/>
 		<item key="DIALOG_HEIGHT" value="617"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
@@ -68,13 +68,13 @@
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="411"/>
-		<item key="DIALOG_Y_ORIGIN" value="-32"/>
+		<item key="DIALOG_Y_ORIGIN" value="-5"/>
 		<item key="DIALOG_WIDTH" value="560"/>
 		<item key="DIALOG_HEIGHT" value="636"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item key="pageIndex" value="2"/>
+		<item key="pageIndex" value="3"/>
 	</section>
 	<section name="DialogBounds_GenerateToStringDialog">
 		<item key="DIALOG_X_ORIGIN" value="415"/>

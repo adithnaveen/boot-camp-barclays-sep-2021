@@ -1,9 +1,0 @@
-package com.dao.factory;
-
-public class DaoFactory {
-	
-	// these type of classes should not be created 
-	// directly since they are resource intensive
-	
-	private DaoFactory() {}
-}

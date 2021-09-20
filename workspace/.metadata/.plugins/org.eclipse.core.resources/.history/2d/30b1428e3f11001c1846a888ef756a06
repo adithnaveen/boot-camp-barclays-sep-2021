@@ -1,2 +1,0 @@
-# JdbcDaoFactory / JPADaoFactory 
-dao.factory=com.barclays.factory.JDBCDaoFactory

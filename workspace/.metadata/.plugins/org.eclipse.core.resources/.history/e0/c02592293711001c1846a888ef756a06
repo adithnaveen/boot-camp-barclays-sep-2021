@@ -1,9 +1,0 @@
-package com.dao.impl;
-
-import com.dao.factory.DaoFactory;
-
-public class App {
-	public static void main(String[] args) {
-		DaoFactory.getProductDao()
-	}
-}

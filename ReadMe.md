@@ -1017,3 +1017,49 @@ pipeline {
         }
     }
 }
+
+
+
+# Day 7 
+
+Containarization - Docker 
+Deploye application on cloud - AWS 
+
+-  docker pull mongo 
+-  docker run --name my-mongo -d mongo
+-  docker ps  (which will show all the docker container running)
+-  docker stop <containerID> - which will strop the container specified 
+-  docker ps -a (which will show all the coker containers running + stopped)
+-  docker start <containerID> - to start existing stopped containers 
+
+-  docker pull ubuntu 
+
+### get into the container 
+- docker exec -it 50ac7729e13c /bin/bash
+
+
+Help Links 
+- https://docs.microsoft.com/en-us/windows/wsl/install-win10 
+- https://www.thecodebuzz.com/docker-error-daemon-is-not-running/
+
+
+
+# Day 8, 9, 10 
+
+- Project 
+  - Project Statement - morning 
+  - Each Project will have 10 People , 23 + 17 = 40 
+  - 
+## Day 8 
+## Day 9 
+## Day 10 
+
+
+
+
+1. Spring Boot application + UI (JavaScript + HTML + CSS), Containarization, CI/CD + Branching Stratergy
+2. Spring Microservices (Netflix OSS Tools) - Eureka, API Gateway, Open Feign, Swagger, Containarization, CI/CD + Branching Stratergy
+
+
+
+

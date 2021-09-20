@@ -1,5 +1,0 @@
-package com.barclays.factory;
-
-public class JPADaoFactory extends DaoFactory{
-
-}

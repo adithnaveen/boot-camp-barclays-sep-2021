@@ -1,7 +1,0 @@
-package com.barclays.shoppingcart;
-
-import com.barclays.contracts.IShoppingCart;
-
-public class ShoppingCart implements IShoppingCart{
-
-}
