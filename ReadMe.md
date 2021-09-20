@@ -1027,6 +1027,7 @@ Deploye application on cloud - AWS
 
 -  docker pull mongo 
 -  docker run --name my-mongo -d mongo
+-  docker run --name my-mongo1 -p 27018:27017 -d  mongo
 -  docker ps  (which will show all the docker container running)
 -  docker stop <containerID> - which will strop the container specified 
 -  docker ps -a (which will show all the coker containers running + stopped)
@@ -1034,13 +1035,60 @@ Deploye application on cloud - AWS
 
 -  docker pull ubuntu 
 
+
+-  docker build -f Dockerfile -t user-app:1 . 
+-  docker run -p 9090:9090 
+
+push the image to cloud 
+- docker image tag user-app:1 adithnaveen/user-app-barclays:1 (make sure you do this )
+- docker push adithnaveen/user-app-barclays:1 ( to push it to docker hub, pls login [docker login])
+
+### to execute spring boot applicaiton written 
+- docker pull adithnaveen/user-app-barclays
+- docker run --name my-spring-boot -p 9090:9090 adithnaveen/user-app-barclays:1
+- http://localhost:9090/user 
+
+
 ### get into the container 
 - docker exec -it 50ac7729e13c /bin/bash
 
 
+1. Create spring boot project + write basic code 
+2. mvn clean install - this creates a .jar file 
+3. java -jar target/barclays-app.jar - to executed spring boot application 
+
 Help Links 
 - https://docs.microsoft.com/en-us/windows/wsl/install-win10 
 - https://www.thecodebuzz.com/docker-error-daemon-is-not-running/
+
+
+
+- Create a spring boot application which connects to mongodb 
+- dockerize the application (preferably with docker compose file )
+
+
+working with docker compose 
+
+
+ 1028  git clone https://github.com/adithnaveen/axis-docker-jenkins-nov2020.git
+ 1029  docker-componse -version
+ 1030  docker-compose -version
+ 1031  ls
+ 1032  cd axis-docker-jenkins-nov2020
+ 1033  clear
+ 1034  ls
+ 1035  docker-compose up -d
+ 1036  docker network create axis-network
+ 1037  docker-compose up -d
+ 1038  mvn clean install
+ 1039  clear
+ 1040  docker-compose up -d
+ 1041  docker images
+ 1042  docker ps 
+ 1043  docker-compose ps 
+ 1044  docker-compose down
+ 1045  docker-compose ps 
+
 
 
 
