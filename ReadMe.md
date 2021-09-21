@@ -1123,11 +1123,113 @@ working with docker compose
   -Dsonar.login=676bc7e57cf113976642dbdbc73ce0f2aa425153
 
 
+BATCH 1 
+- table creation is done 
+- the end points are done at basic level 
+- are able to seed the data by invoking the controller 
+- mvn clean install sonar:sonar -DskipTests=true 
+- in jenkins, include jacoco plugin 
+
+
+Batch 4 
+- mongodb 
+
+{
+	custId:101, 
+	custName:"Pratheep", 
+	custIncome: 12345, 
+	address: {
+		hno:123, 
+		street:"Some Blvd", 
+		city:"Blr" 
+	}, 
+	accounts : [
+		{
+			accountId: "A101", 
+			balance:4443, 
+			branch:"Majestic"
+		}, 
+		{
+			accountId: "A101", 
+			balance:4443, 
+			branch:"Majestic"
+			}, 
+		{
+			accountId: "A101", 
+			balance:4443, 
+			branch:"Majestic"
+		}
+	], 
+	transactions: [
+		transaction: {
+			tid:12343434343, 
+			tdate:1-2-2021, 
+			debit-acc-no:"A101", 
+			credit-acc-no:"A102", 
+			amount:3333, 
+			mode-of-transaction: "atm"
+		}
+	]
+}
+
+class Representation 
+class Customer {
+	private int custId; 
+	private String custName; 
+	private double custIncome; 
+	private Address address; 
+	private List<Accounts> accounts;
+	private List<Transactions> transactions; 
+
+}
+
+class Transactions {
+	private int tid; 
+	private Date tdate; 
+	private String debitAccNo; 
+	private String creditAccNo;
+	private double amount; 
+	private enum modeOfTransactions; // ATM / DEBIT CARD / TRANSAFER 
+
+}
+class Address {
+	private int hno; 
+	private String street;
+	private String city; 
+}
+
+
+
+
+    git branch: "main", url: 'https://github.com/yourname/repo.git'
+
+
+
+- Github Repo  (done)
+- Github PR -> main branch 
+- Sonar, DevOps (Docker)
+- Dev - code - Spring boot - Swagger 
+- 
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>3.0.0</version>
+</dependency>
+
+https://medium.com/@hala3k/setting-up-swagger-3-with-spring-boot-2-a7c1c3151545
+
+http://localhost:9090/v2/swagger-files.html
+
+- UI - 
+
 
 
 ## Day 9 
+	2PM - start working on final deck 
+	6pm - freeze code 
 ## Day 10 
-
+	2PM start presentation 
 
 
 
