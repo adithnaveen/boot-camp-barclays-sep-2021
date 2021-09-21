@@ -1106,8 +1106,23 @@ working with docker compose
 
 
 1. Spring Boot application + UI (JavaScript + HTML + CSS), Containarization, CI/CD + Branching Stratergy
-2. Spring Microservices (Netflix OSS Tools) - Eureka, API Gateway, Open Feign, Swagger, Containarization, CI/CD + Branching Stratergy
+2. Spring Microservices (Netflix OSS Tools) - Eureka, API Gateway, Open Feign, Swagger/Postman, Containarization, CI/CD + Branching Stratergy
+
+Optional 
+- AWS / Azure / Heroku / GCP 
+
+Thursday 
+-	stake holders from Barclays to come and evaluate 
 
 
 
+
+1. Scrum Master + Meistertask / Jira 
+2. Developers 
+3. Database 
+4. Dockerizing 
+5. Jenkins 
+6. Cloud Optional 
+7. SCM 
+8. SonarQube (Test Coverage)
 
