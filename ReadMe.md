@@ -1099,6 +1099,32 @@ working with docker compose
   - Each Project will have 10 People , 23 + 17 = 40 
   - 
 ## Day 8 
+>  docker run --name sonar-clays -p9000:9000 -d sonarqube 
+
+
+
+```
+	class Employee {
+		private int empId; 
+
+	}
+```
+
+### for sonar configuration 
+
+1. Create a simple spring boot application from start.spring.io 
+2. create a end point controller / service / repo / config / exception
+3. create simple test cases 
+4. docker pull sonarqube, start sonarqube 
+5. setup required properties in the pom.xml for sonar 
+6. mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=bar-account-project \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=676bc7e57cf113976642dbdbc73ce0f2aa425153
+
+
+
+
 ## Day 9 
 ## Day 10 
 
