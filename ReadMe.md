@@ -1274,14 +1274,54 @@ interface EmployeeRepo extends CrudRepository<Integer, Login> {
 	public Employee getEmployeesByName(String name);
 
 }
+------------------------------------------------------------------------ 
 
+class Employee {
+	private int empId;
+	private String empName; 
+	 
+	private List<Account> account;
 
+	public Employee() {}
 
+	public Employee(int empId, String empName){
+		this.empId = empId;
+		this.empName = empName;
+		 
+	}
+ 
+}
 
-interface EmployeeRepo extends MongoRepository<Integer, Login> {
+class Account {
+	private int accId; 
+	private double balance;
 
 
 }
+
+
+
+---------------------------------------------------------------
+{
+	empId:int, 
+	empName:string, 
+	account:[
+		{
+			accId:int, 
+			balance:double
+		}, 
+		{
+			accId:int, 
+			balance:double
+		}
+	]
+}
+
+
+
+
+  @Query("{'address.country': ?0}", "{"empname":1, "account.balance":1 }")
+
 
 
 
@@ -1290,7 +1330,7 @@ Mohak
 		GET /account/{accountId}
 
 	AccountTransaction - 
-		GET /account/{accountId}/transaction - give all transaction for the account 
+		GET /account/{accountId}/transaction - get all transaction for the account 
 		GET /account/{accountId}/transaction/{transactionId} - give all transaction for the account 
 		
 	CreditAmount 
@@ -1306,6 +1346,22 @@ Harshavardhini
 	Registration 
 
 
+
+### Scrum Masters Meet 
+- List All End Points - Swagger 
+- UI 
+- 1 Spring Boot, 1 MongoDB / MySQL (Replication)
+- Jenkins Pipeline - Do it with docker (wow)
+  - Creating a arch diagram 
+  - SonarQube + (docker) 
+- Agile practices which we have done 
+  - User Stories - Meister task / jira / MS Planner 
+  - Mock the screen 
+  - Slack, for collaborative work 
+  - SCM
+    - GitHub 
+- Team 
+  - 
 
 
 
