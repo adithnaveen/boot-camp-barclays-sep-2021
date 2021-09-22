@@ -1228,6 +1228,91 @@ http://localhost:9090/v2/swagger-files.html
 ## Day 9 
 	2PM - start working on final deck 
 	6pm - freeze code 
+
+
+@RestController
+class EmployeeController {
+
+	@AutoWired 
+	private EmployeeService service; 
+
+	@PostMapping("/login")
+	public boolean loginEmployee (@RequestBody Login login){
+		return service.loginEmployee(login); 
+
+	}
+
+	@PutMapping("/account/{fromAccountId}/{toAccountId}/amount")
+	public boolean makeTransaction(int fromAccountId, int toAccountId, double amount{
+		service.makeTransaction(fromAccountId, toAccountId, amount); 
+	}
+}
+------------------------------------------------- 
+// in case if you need some validation do it here 
+class EmployeeService {
+	private EmployeeRepo repo; 
+
+	public boolean loginEmployee(Login login) {
+		return repo.insert(login)!=null;
+	}
+
+	public makeTransaction(fromAccountId, toAccountId, amount){
+
+		if(amount < 0 ){
+			throw new InvalidTransactionException("sorry amount is less than zero"); 
+		}
+		.... 
+		mongotemplate 
+	}
+}
+
+---------------------------------------------------
+
+interface EmployeeRepo extends CrudRepository<Integer, Login> {
+
+	@Query(native=true, value="select * from employee where empname=?0")
+	public Employee getEmployeesByName(String name);
+
+}
+
+
+
+
+interface EmployeeRepo extends MongoRepository<Integer, Login> {
+
+
+}
+
+
+
+Mohak 
+	AccountDetails 
+		GET /account/{accountId}
+
+	AccountTransaction - 
+		GET /account/{accountId}/transaction - give all transaction for the account 
+		GET /account/{accountId}/transaction/{transactionId} - give all transaction for the account 
+		
+	CreditAmount 
+	DebitAmount 
+	Transfer
+		PUT /account/{fromAccountId}/{toAccountId}/amount
+Harshavardhini 
+	Login - POST /login 
+	{
+		username:"harshavardhini", 
+		password:"secret"
+	}
+	Registration 
+
+
+
+
+
+
+
+
+
 ## Day 10 
 	2PM start presentation 
 
