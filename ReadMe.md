@@ -1351,7 +1351,7 @@ Harshavardhini
 - List All End Points - Swagger 
 - UI 
 - 1 Spring Boot, 1 MongoDB / MySQL (Replication)
-- Jenkins Pipeline - Do it with docker (wow)
+- Jenkins Pipeline - Do it with docker (wow) 
   - Creating a arch diagram 
   - SonarQube + (docker) 
 - Agile practices which we have done 
@@ -1361,7 +1361,29 @@ Harshavardhini
   - SCM
     - GitHub 
 - Team 
-  - 
+ 
+
+8:30 - 15 mins 
+9:05 - Start Demo 
+
+
+
+
+
+
+Hi All, 
+  Let’s have POD standup below are the slots 
+
+PG(A) - 3:30 PM to 3:45 
+PG(A) - 3:45 PM to 4:00 
+PG(A) - 4:00 PM to 4:15
+PG(A) - 4:15 PM to 4:30 
+
+i’ll be joining respective rooms 
+
+4:30 to 4:45 in common hall 
+
+
 
 
 
@@ -1394,4 +1416,22 @@ Thursday
 6. Cloud Optional 
 7. SCM 
 8. SonarQube (Test Coverage)
+
+
+
+
+Presentation Order 
+
+1. 4(C) Payments Group - 11 - Harshithaa 
+2. 4(A) Accounts Management - 10  - Ashiwin 
+3. 4(B) Home Loan - 10 - Paras
+4. 4(D) Accounts Management - 10 - Yadhav Krishna 
+
+
+- Class Host : Ashiwin 
+
+
+
+
+
 
